@@ -1,4 +1,5 @@
-( function($) {
+
+  ( function($) {
   
   $(document).ready(function() {
     
@@ -24,14 +25,25 @@
       e.preventDefault();
 
       if( $(this).hasClass('next') ) {
-        
-        ( clickCount < ( sCount - 1 ) ) ? clickCount++ : clickCount = 0;
+
+        var aa=clickCount+1;
+
+        if(aa<sCount)
+        {
+
+            ( clickCount < ( sCount - 1 ) ) ? clickCount++ : clickCount = 0;
+        }
        
 
       } else if ( $(this).hasClass('prev') ) {
-        
+          aa=clickCount;
+       
+        if(aa!==0)
+        {
         ( clickCount > 0 ) ? clickCount-- : ( clickCount = sCount - 1 );
       }
+      }
+
       TweenMax.to(sWrapper, 0.4, {x: '-' + ( sWidth * clickCount ) })
 
 
@@ -61,15 +73,23 @@
     btn1.on('click', function(e) {
       e.preventDefault();
 
-      if( $(this).hasClass('next') ) {
-        
-        ( clickCount1 < ( sCount1 - 1 ) ) ? clickCount1++ : clickCount1 = 0;
+    if( $(this).hasClass('next') ) {
+        var aa1=clickCount1+1;
+        if(aa1<sCount1)
+        {
+            ( clickCount1 < ( sCount1 - 1 ) ) ? clickCount1++ : clickCount1 = 0;
+        }
+       
+
       } else if ( $(this).hasClass('prev') ) {
-        
+          aa1=clickCount1;
+       
+        if(aa1!==0)
+        {
         ( clickCount1 > 0 ) ? clickCount1-- : ( clickCount1 = sCount1 - 1 );
       }
+      }
       TweenMax.to(sWrapper1, 0.4, {x: '-' + ( sWidth1 * clickCount1 ) })
-
 
      
 
