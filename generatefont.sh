@@ -1,0 +1,1 @@
+icon-font-generator svg-src/*svg -o icons-dist --html false -p val -t .icon

@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "icons";
+    src: url("./icons.eot?858befc5531602cccdf361a82a2150aa?#iefix") format("embedded-opentype"),
+url("./icons.woff2?858befc5531602cccdf361a82a2150aa") format("woff2"),
+url("./icons.woff?858befc5531602cccdf361a82a2150aa") format("woff"),
+url("./icons.ttf?858befc5531602cccdf361a82a2150aa") format("truetype"),
+url("./icons.svg?858befc5531602cccdf361a82a2150aa#icons") format("svg");
+}
+
+.icon {
+    line-height: 1;
+}
+
+.icon:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    vertical-align: top;
+}
+
+.val-arrow-left:before {
+    content: "\f101";
+}
+.val-arrow-right:before {
+    content: "\f102";
+}
+.val-chevron-down:before {
+    content: "\f103";
+}
+.val-circle-chevron-left:before {
+    content: "\f104";
+}
+.val-circle-chevron-right:before {
+    content: "\f105";
+}
+.val-circle-facebook:before {
+    content: "\f106";
+}
+.val-circle-linkedin:before {
+    content: "\f107";
+}
+.val-circle-twitter:before {
+    content: "\f108";
+}
+.val-valuchan-logo:before {
+    content: "\f109";
+}
